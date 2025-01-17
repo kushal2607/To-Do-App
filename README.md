@@ -13,6 +13,7 @@ A simple and elegant To-Do List application built using React, Vite, and Materia
 
 # deployment link from vercel
 - https://to-do-app-ten-hazel.vercel.app/
+- open it in your laptop browser for perfect view
 
 
 
