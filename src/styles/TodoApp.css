@@ -1,0 +1,177 @@
+.todo-container {
+   min-height: 100vh;
+   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width:550px;
+   margin-left: 500px;
+   
+  
+ }
+
+ .content-wrapper {
+   width: 100%;
+   max-width: 800px;
+   margin: 0 auto;
+ }
+
+ .header-container {
+   width: 100%;
+   margin-bottom: 2rem;
+ }
+
+ .todo-card {
+   width: 100%;
+   max-width: 800px;
+   margin: 20px auto;
+   padding: 24px;
+   border-radius: 12px !important;
+   background: white;
+   transition: transform 0.2s ease, box-shadow 0.2s ease;
+ }
+ 
+ .app-title {
+   position: relative;
+   display: inline-block;
+ }
+ 
+ .app-title::after {
+   content: '';
+   position: absolute;
+   width: 100%;
+   height: 2px;
+   bottom: -4px;
+   left: 0;
+   background-color: #1976d2;
+   transform: scaleX(0);
+   transition: transform 0.3s ease;
+ }
+ 
+ .app-title:hover::after {
+   transform: scaleX(1);
+ }
+ 
+ .todo-card {
+   transition: transform 0.2s ease, box-shadow 0.2s ease;
+ }
+ 
+ .todo-card:hover {
+   transform: translateY(-2px);
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1) !important;
+ }
+ 
+ .todo-input {
+   transition: all 0.3s ease;
+ }
+ 
+ .todo-input:focus {
+   border-color: #1976d2;
+   box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.1);
+ }
+ 
+ .add-button {
+   transition: all 0.3s ease !important;
+ }
+ 
+ .add-button:hover {
+   transform: translateY(-1px);
+   box-shadow: 0 4px 8px rgba(25, 118, 210, 0.2) !important;
+ }
+ 
+ .todo-item {
+   position: relative;
+   overflow: hidden;
+   transition: all 0.3s ease;
+ }
+ 
+ .todo-item::before {
+   content: '';
+   position: absolute;
+   left: 0;
+   top: 0;
+   height: 100%;
+   width: 3px;
+   background-color: #1976d2;
+   transform: scaleY(0);
+   transition: transform 0.2s ease;
+ }
+ 
+ .todo-item:hover::before {
+   transform: scaleY(1);
+ }
+ 
+ .todo-item:hover {
+   background-color: rgba(0, 0, 0, 0.02);
+   padding-left: 16px;
+ }
+ 
+ .delete-button {
+   opacity: 0.7;
+   transition: all 0.2s ease !important;
+ }
+ 
+ .delete-button:hover {
+   opacity: 1;
+   background-color: rgba(244, 67, 54, 0.1) !important;
+ }
+ 
+ .task-text {
+   transition: all 0.2s ease;
+ }
+ 
+ .task-completed {
+   text-decoration: line-through;
+   color: rgba(0, 0, 0, 0.5);
+ }
+ 
+ .counter-chip {
+   transition: all 0.3s ease;
+ }
+ 
+ .counter-chip:hover {
+   transform: scale(1.05);
+ }
+ 
+ 
+ @keyframes slideIn {
+   from {
+     opacity: 0;
+     transform: translateY(-20px);
+   }
+   to {
+     opacity: 1;
+     transform: translateY(0);
+   }
+ }
+ 
+ .new-task {
+   animation: slideIn 0.3s ease forwards;
+ }
+ 
+
+ .empty-state {
+   text-align: center;
+   padding: 40px 20px;
+   color: rgba(0, 0, 0, 0.5);
+   background: linear-gradient(135deg, #f5f7fa 0%, #e4e9f2 100%);
+   border-radius: 8px;
+   transition: all 0.3s ease;
+ }
+ 
+ .empty-state:hover {
+   transform: scale(1.02);
+   background: linear-gradient(135deg, #e4e9f2 0%, #f5f7fa 100%);
+ }
+ 
+ 
+ @media (max-width: 600px) {
+   .todo-container {
+     padding: 10px;
+   }
+   
+   .empty-state {
+     padding: 20px 10px;
+   }
+ }
