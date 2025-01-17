@@ -9,7 +9,10 @@ A simple and elegant To-Do List application built using React, Vite, and Materia
    - npm install
 3- Start the development server: Using npm:
    - npm run dev
-4- Open your browser: Navigate to http://localhost:5173 to view the app.      
+4- Open your browser: Navigate to http://localhost:5173 to view the app.
+
+# deployment link from vercel
+- https://to-do-app-ten-hazel.vercel.app/
 
 
 
